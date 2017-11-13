@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Voicee</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div class="welcome">
+			<div class="warning">Warning :</div>
+			<div class="text">
+				This project is undermaintaice.
+			</div>
+			<div class="go btn">
+				<i class="fa fa-fighter-jet" aria-hidden="true"></i>
+			</div>
+		</div>
+		<div class="language hide">
+			<div class="text">
+				Choose output language
+			</div>
+			<a href="bn.ejs">
+				<div class="btn inline" id="1">
+					Bangla<br>(বাংলা)
+				</div>
+			</a>
+			<a href="en.ejs">
+				<div class="btn inline" id="2">
+					English<br>(ইংরেজী)
+				</div>
+			</a>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+		$('.go').click(function(){
+			$('.welcome').addClass('hide');
+			$('.language').removeClass('hide');
+		});
+	</script>
+</body>
+</html>
